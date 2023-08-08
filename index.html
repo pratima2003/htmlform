@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f7;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        span {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="index.html" method="post">
+        <p>First Name</p>
+        <input type="text" name="first_name" value="" required>
+        
+        <p>Last Name</p>
+        <input type="text" name="last_name" value="" required>
+        
+        <p>Email Id:</p>
+        <input type="email" name="email" value="" required>
+        
+        <p>Phone</p>
+        <input type="tel" name="phone" value="" required>
+        
+        <p>Address</p>
+        <input type="text" name="address" value="" required>
+        
+        <p>Course</p>
+        <input type="text" name="course" value="" required>
+        
+        <p>Gender</p>
+        <span>Male</span>
+        <input type="radio" name="gender" value="male" required>
+        
+        <span>Female</span>
+        <input type="radio" name="gender" value="female" required>
+        
+        <p>Semester</p>
+        <span>5th</span>
+        <input type="radio" name="semester" value="5th" required>
+        
+        <span>6th</span>
+        <input type="radio" name="semester" value="6th" required>
+        
+        <p>Subjects</p>
+        <span>C++</span>
+        <input type="checkbox" name="subject[]" value="c++" required>
+        
+        <span>Java</span>
+        <input type="checkbox" name="subject[]" value="java" required>
+        
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
